@@ -250,36 +250,32 @@ a:hover {
 }
 
 .canvas h1 {
-  font-size: 4vw;
-  font-weight: 1000px;
+  font-size: 60px;
+  font-weight: 700px;
   letter-spacing: 3px;
   padding: 20px 0;
 }
 
+
+
 .canvas h2 {
-  font-size: 2.75vw;
-  font-weight: normal;
+  font-size: 60px;
+  font-weight: 300;
   letter-spacing: 3px;
   padding: 20px 0 50px 0;
 }
  
 .canvas .divider {
   border-top:hsl(39, 100%, 50%) 2px solid;
-  width: 25%;
+  width: 15%;
   padding: 20px 0;
 }
 
-.canvas h3 {
-  font-size: 2.25vw;
-  font-weight: normal;
-  letter-spacing: 3px;
-  padding-bottom: 50px;
-}
-
 .canvas p {
-  font-size: 1vw;
+  font-size: 20px;
   padding-bottom: 20px;
   letter-spacing: 2px;
+  font-weight: 300;
 }
 
 .canvas-btn {
@@ -312,11 +308,6 @@ a:hover {
   width: 100%;
 }
 
-.canvas p {
-  font-weight: 600;
-}
-
-
 .canvas span {
   color: orange;
   padding: 0 10px;
@@ -346,23 +337,22 @@ a:hover {
 }
 
 .intro-content h4 {
-  font-size: 1.5vw;
+  font-size: 20px;
   font-weight: 600;
-  letter-spacing: 2px;
+  letter-spacing: 3px;
   text-transform: uppercase;
 }
 
 .intro-content h1 {
-  font-size: 3vw;
-  font-weight: 800;
+  font-size: 54px;
+  font-weight: 600;
   padding: 50px 0;
   letter-spacing: 2px;
 }
 
-.intro-content h3 {
-  font-size: 2vw;
-  letter-spacing: 2px;
-  font-weight: normal;
+.intro-content p {
+  font-size: 25px;
+  letter-spacing: 1px;
 }
 
 /* About Section */
@@ -405,7 +395,7 @@ a:hover {
 }
 
 .about-list div h2 {
-  font-size: 25px;
+  font-size: 22px;
   font-weight: 500;
   margin-bottom: 15px;
 }
@@ -464,13 +454,14 @@ a:hover {
   text-transform: uppercase;
   letter-spacing: 2px;
   padding: 25px 0;
-  font-size: 1vw;
-  font-weight: 750;
+  font-size: 16px;
+  font-weight: 500;
 }
 
 .services-content h4 {
-  font-size: 1.5vw;
+  font-size: 30px;
   padding: 25px 0 50px 0;
+  font-weight: 600;
 }
 
 .services-socials a {
@@ -484,7 +475,7 @@ a:hover {
 }
 
 .services-content p {
-  font-size: 1vw;
+  font-size: 20px;
   padding: 0 0;
 }
 
@@ -538,7 +529,9 @@ a:hover {
 }
 
 .service-list div h3 {
-  font-size: 16px;
+  font-size: 18px;
+  letter-spacing: 1px;
+  font-weight: 500;
 }
 
 
@@ -879,19 +872,31 @@ ul {
     grid-template-columns: 1fr 1fr;
   }
 
- /* .intro-content {
-    padding: 50px 15px;
+  .canvas,
+  .intro-content {
+    padding: 25px;
+  }
+
+  .canvas h1,
+  .canvas h2 {
+    font-size: 40px;
+  }
+
+  .canvas p {
+    font-size: 14px;
+  }
+
+  .intro-content h4 {
+    font-size: 14px;
   }
 
   .intro-content h1 {
-    padding: 25px 0;
-    font-size: 1.75rem;
+    font-size: 35px;
   }
 
   .intro-content p {
-    font-size: 1rem;
-    padding: 0;
-  } */
+    font-size: 20px;
+  } 
 
   
 
