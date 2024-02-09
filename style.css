@@ -36,13 +36,13 @@ body {
 
 .contact-nav {
   height: 60px;
-  width: 100%;
+  max-width: 1200px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   align-items: center;
   background-color: rgb(247, 247, 247);
-  margin: 0;
-  padding: 0 75px;
+  margin: 0 auto;
+  padding: 0 50px;
 }
 
 .phone {
@@ -82,10 +82,16 @@ body {
 
 /* MAIN NAV BAR */
 
-.navbar {
+.navbar-container {
   width: 100%;
-  height: 11vh;
-  padding: 0 75px;
+  background-color: #fff;
+}
+
+.navbar {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 50px;
+  height: 15vh;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -175,25 +181,24 @@ a:hover {
 .dropdown-menu {
   display: none;
   position: absolute;
-  top: 100px;
-  width: 100%;
+  top: 125px;
+  right: 0;
+  width: 300px;
   height: 0;
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(92, 91, 91, 0.603);
   backdrop-filter: blur(15px);
   overflow: hidden;
   transition: height .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  border-top: hsl(39, 100%, 50%) 3px solid;
   margin: 0;
   padding: 0;
-  
+  z-index: 3;
 }
 
 .dropdown-menu.open {
-  height: 260px;
-  width: 100%;
+  height: 280px;
 }
 .dropdown-menu li {
-  padding: 0.7rem;
+  padding: 0.4rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -216,32 +221,43 @@ a:hover {
   justify-content: center;
 }
 
+.dropdown-menu.open .action-btn {
+  padding: 10px;
+}
+
 /* Canvas Section */
 
-.canvas {
+.hero-container {
   background-image: url(./images/peakpx.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
-  width: 100%;
-  height: 800px;
-  padding: 150px 75px;
+  max-width: 100%;
+  height:auto;
+}
+
+.canvas {
+  position: relative;
+  max-width: 1200px;
+  height: auto;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
+  padding: 100px 50px;
   color: white;
   text-transform: uppercase;
 }
 
 .canvas h1 {
-  font-size: 4rem;
+  font-size: 4vw;
   font-weight: 1000px;
   letter-spacing: 3px;
   padding: 20px 0;
 }
 
 .canvas h2 {
-  font-size: 3.5rem;
+  font-size: 2.75vw;
   font-weight: normal;
   letter-spacing: 3px;
   padding: 20px 0 50px 0;
@@ -254,21 +270,22 @@ a:hover {
 }
 
 .canvas h3 {
-  font-size: 1.75rem;
+  font-size: 2.25vw;
   font-weight: normal;
   letter-spacing: 3px;
   padding-bottom: 50px;
 }
 
 .canvas p {
+  font-size: 1vw;
   padding-bottom: 20px;
   letter-spacing: 2px;
 }
 
 .canvas-btn {
-  font-size: 1rem;
+  font-size: 1vw;
   background-color: hsl(39, 100%, 50%);
-  padding: 15px 20px;
+  padding: 1rem 1rem;
   border-radius: 4px;
   margin-top: 2rem;
   cursor: pointer;
@@ -308,52 +325,57 @@ a:hover {
 
 /* Intro Section */
 
-#intro {
+.intro-container {
   width: 100%;
-  min-height: 40vh;
+  height: auto;
+  padding: 0;
 }
 
 .intro-content {
   position: relative;
   text-align: center;
   line-height: 50px;
-  min-height: 500px;
-  width: 100%;
-  margin: auto;
+  height: auto;
+  max-width: 1200px;
+  margin: 0 auto;
   display: flex;
   justify-content: center;
   align-content: center;
   flex-direction: column;
-  padding: 150px 75px;
+  padding: 100px 50px;
 }
 
 .intro-content h4 {
-  font-size: 1rem;
+  font-size: 1.5vw;
   font-weight: 600;
   letter-spacing: 2px;
   text-transform: uppercase;
-  
 }
 
 .intro-content h1 {
-  font-size: 3rem;
+  font-size: 3vw;
   font-weight: 800;
-  padding: 25px 0;
+  padding: 50px 0;
   letter-spacing: 2px;
-  padding: 40px 150px;
 }
 
-.intro-content p {
-  font-size: 1.75rem;
-  padding: 0 175px;
+.intro-content h3 {
+  font-size: 2vw;
   letter-spacing: 2px;
+  font-weight: normal;
 }
 
 /* About Section */
 
-#about {
-  padding: 20px 75px;
-  background-color: whitesmoke;
+.about-container {
+  width: 100%;
+  height: auto;
+}
+
+.about {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 50px;
 }
 
 .about-list {
@@ -361,7 +383,7 @@ a:hover {
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   margin-top: 50px;
   margin: 0;
-  gap: 2px;
+  gap: 20px;
   color: black;
 }
 
@@ -373,11 +395,12 @@ a:hover {
   transition: background 0.5, transform 0.5s;
   margin-bottom: 75px;
   border-radius: 4px;
+
 }
 
 .about-list div i {
   font-size: 50px;
-  margin-bottom: 30px;
+  margin-bottom: 15px;
   color: orange;
 }
 
@@ -417,65 +440,77 @@ a:hover {
 
 /* Services Section */
 
-#services {
+.services-container {
   width: 100%;
-  min-height: 40vh;
-  padding: 0 75px;
+  height: auto;
 }
 
-.services-container {
+.services-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 100px 50px;
   position: relative;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-content: center;
   text-align: center;
   flex-direction: column;
-  padding: 25px 75px 100px 75px;
   line-height: 50px;
 }
 
-.services-container h4 {
+
+.services-content h5 {
   color: orange;
   text-transform: uppercase;
   letter-spacing: 2px;
   padding: 25px 0;
+  font-size: 1vw;
+  font-weight: 750;
 }
 
-.services-container h3 {
-  font-size: 1.75rem;
-  width: 80%;
+.services-content h4 {
+  font-size: 1.5vw;
   padding: 25px 0 50px 0;
 }
 
 .services-socials a {
   display: inline-flex;
+  justify-content: center;
+  align-content: center;
   gap: 50px;
   font-size: 40px;
   row-gap: 20px;
   padding: 25px 15px;
 }
 
-.services-container p {
-  font-size: 1.25rem;
+.services-content p {
+  font-size: 1vw;
   padding: 0 0;
 }
 
-.service-list {
+.service-type-container {
   width: 100%;
+  height: auto;
+  margin: 0 auto;
+  padding: 0 50px;
+}
+
+.service-list {
+  max-width: 1200px;
   min-height: 40vh;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-  margin-top: 50px;
-  margin: 0;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  margin: 0 auto;
   gap: 2px;
   color: black;
 }
 
-.service-list div {
+.service-list div {  
   display: flex;
+  flex-flow: column wrap;
   justify-content: center;
-  flex-direction: column;
-  align-items: center;
+  align-content: center;
+  text-align: center;
   font-size: 13px;
   font-weight: 300;
   transition: background 0.5, transform 0.5s;
@@ -483,19 +518,19 @@ a:hover {
   border-radius: 4px;
 }
 
-.service-type h1 {
+.service-type-container h1 {
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 50px 0 75px 0;
-  font-size: 2rem;
+  font-size: 3vw;
   text-transform: uppercase;
 }
 
 .service-list div i {
   font-size: 75px;
   color: orange;
-  padding: 25px 0;
+  padding-bottom: 20px;
 }
 
 .service-list div:hover {
@@ -504,7 +539,6 @@ a:hover {
 
 .service-list div h3 {
   font-size: 16px;
-  padding: 0 20px
 }
 
 
@@ -512,22 +546,30 @@ a:hover {
 
 .contact-container {
   width: 100%;
-  height: 100vh;
-  font-size: 62.5%;
+  height: auto;
   background-color: #24262b;
-  display: grid;
-  place-items: center;
 }
 
-.form-heading {
+.form-wrapper {
+  position: relative;
+  max-width: 1200px;
+  height: 110vh;
+  margin: 0 auto;
+  font-size: 62.5%;
+  display: grid;
+  place-items: center;
+  padding: 0 50px;
+}
+
+.form-wrapper .form-heading {
   font-family: "arial", sans-serif;
-  font-size: 3rem;
+  font-size: 50px;
   font-weight: 400;
   color: #fff;
   letter-spacing: 0.3rem;
-  margin-bottom: 3rem;
   transition: all 0.3s;
   text-transform: capitalize;
+  padding-top: 25px;
 }
 
 .contact-form {
@@ -565,7 +607,7 @@ a:hover {
 
 .form-submit-btn {
   width: 20rem;
-  height: 3rem;
+  height: 2rem;
   background-color: #fff;
   border: none;
   font-size: 1.3rem;
@@ -577,8 +619,14 @@ a:hover {
 /* Gallery */
 
 .gallery-container {
-  position: relative;
-  min-height: 100vh;
+  width: 100%;
+  height: auto;
+}
+
+.gallery-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 50px 50px 100px 50px;
 }
 
 .gallery-container h1 {
@@ -599,8 +647,8 @@ a:hover {
 }
 
 .gallery-container .image-container .image {
-  height: 250px;
-  width: 350px;
+  height: 200px;
+  width: 250px;
   border: 10px solid rgba(128, 128, 128, 0.37);
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   overflow: hidden;
@@ -740,24 +788,16 @@ ul {
 
 
 /* RESPONSIVE DESIGN */
-@media (max-width: 1150px) {
-  .banner {
-    flex-direction: column;
-  }
-}
 
-@media (max-width: 992px) {
+@media (max-width: 1050px) {
   .navbar .links,
   .navbar .action-btn,
-  .contact-nav {
+  .contact-nav,
+  .canvas-btn {
     display: none;
   }
 
-  .navbar {
-    padding: 50px 75px;
-    margin: 0;
-    width: 100%;
-  }
+  
 
   .navbar .toggle-btn {
     display: block;
@@ -770,19 +810,7 @@ ul {
   .dropdown-menu .action-btn {
     width: 175px;
   }
-
-  .canvas {
-    width: 100%;
-  }
-
-  .canvas h1 {
-    font-size: 2.5rem;
-  }
-
-  .canvas h2 {
-    font-size: 2rem;
-  }
-
+/*
   .intro.content {
     padding: 50px;
     width: 100%;
@@ -797,20 +825,31 @@ ul {
     font-size: 1.25rem;
     padding: 0;
   }
+
+  */
   
-  .service-type h1 {
-    justify-content: center;
-    font-size: 1.5rem;
+}
+
+@media (max-width: 900px) {
+  .gallery-container .image-container #hidden1.image {
+    display: none;
   }
+
+  
 }
 
 @media (max-width: 850px) {
   .service-list {
     grid-template-columns: 1fr 1fr 1fr;
-  } 
-  
-  .services-container {
-    padding: 0;
+  }
+
+  .service-list div {
+    padding: 0 25px;
+  }
+
+  .gallery-container .image-container .image {
+    height: 150px;
+    width: 150px;
   }
 
   .container .popup-image img {
@@ -824,6 +863,9 @@ ul {
 }
 
  @media (max-width: 600px) {
+  .gallery-container .image-container #hidden2.image {
+    display: none;
+  }
 
   .dropdown-menu {
     width: 100%;
@@ -833,7 +875,11 @@ ul {
     width: 40%;
   }
 
-  .intro-content {
+  .service-list {
+    grid-template-columns: 1fr 1fr;
+  }
+
+ /* .intro-content {
     padding: 50px 15px;
   }
 
@@ -845,23 +891,9 @@ ul {
   .intro-content p {
     font-size: 1rem;
     padding: 0;
-  }
+  } */
 
-  #services {
-    padding: 25px;
-  }
-
-  .services-container h3 {
-    font-size: 1.25rem;
-  }
-
-  .services-container p {
-    font-size: 1rem;
-  }
-
-  .service-list {
-    grid-template-columns: 1fr 1fr;
-  }
+  
 
   .footer-col {
     width: 100%;
