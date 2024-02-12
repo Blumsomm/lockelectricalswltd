@@ -183,7 +183,7 @@ a:hover {
   position: absolute;
   top: 136px;
   right: 0;
-  width: 300px;
+  width: 100px;
   height: 0;
   background: rgba(92, 91, 91, 0.603);
   backdrop-filter: blur(15px);
@@ -192,16 +192,18 @@ a:hover {
   margin: 0;
   padding: 0;
   z-index: 3;
+  border-radius: 5px 0 5px 5px;
 }
 
 .dropdown-menu.open {
-  height: 280px;
+  height: 75px;
+  width: 100%;
+  padding: 0 75px;
 }
 .dropdown-menu li {
-  padding: 0.4rem;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  align-content:center;
+  justify-content:center;
 }
 
 .dropdown-menu a {
@@ -216,7 +218,7 @@ a:hover {
 }
 
 .dropdown-menu .action-btn {
-  width: 60%;
+  width: auto;
   display: flex;
   justify-content: center;
 }
@@ -228,7 +230,7 @@ a:hover {
 /* Canvas Section */
 
 .hero-container {
-  background-image: url(./images/peakpx.jpg);
+  background-image: url(./images/peakpx75dark.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -247,6 +249,7 @@ a:hover {
   padding: 100px 50px;
   color: white;
   text-transform: uppercase;
+  
 }
 
 .canvas h1 {
@@ -438,7 +441,7 @@ a:hover {
 .services-content {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 100px 50px;
+  padding: 25px 50px 75px 50px;
   position: relative;
   display: flex;
   justify-content: center;
@@ -459,7 +462,7 @@ a:hover {
 }
 
 .services-content h4 {
-  font-size: 30px;
+  font-size: 26px;
   padding: 25px 0 50px 0;
   font-weight: 600;
 }
@@ -476,7 +479,6 @@ a:hover {
 
 .services-content p {
   font-size: 20px;
-  padding: 0 0;
 }
 
 .service-type-container {
@@ -507,6 +509,7 @@ a:hover {
   transition: background 0.5, transform 0.5s;
   margin-bottom: 75px;
   border-radius: 4px;
+  
 }
 
 .service-type-container h1 {
@@ -589,7 +592,7 @@ a:hover {
 
 .accreditations {
   max-width: 1200px;
-  height: auto;
+  height: 117px;
   margin: 75px auto;
   display: flex;
   flex-direction: row;
@@ -707,7 +710,7 @@ ul {
 .gallery-content {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 125px 0 75px 0;
+  padding: 75px 0;
 }
 
 .image-container {
@@ -931,6 +934,137 @@ ul {
     cursor: pointer;
   }
 
+  /* Services Page */  
+  
+  .wrapper {
+    max-width: 1200px;
+    margin: auto;
+    padding: 75px 0 25px 0;
+  }
+  
+  .wrapper > p, 
+  .wrapper h1 {
+    margin: 50px 0;
+    text-align: center;
+  }
+  
+  .wrapper > h1 {
+    letter-spacing: 3px;
+    text-transform: uppercase;
+  }
+  
+  .accordion {
+    background-color: #fff;
+    color: rgba(0, 0, 0, 0.8);
+    cursor: pointer;
+    font-size: 1.2rem;
+    width: 100%;
+    padding: 2rem 2.5rem;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+  }
+  
+  .accordion i {
+    font-size: 25px;
+    padding-right: 15px;
+    color: orange;
+  }
+
+  .accordion:hover {
+    border: 1px solid orange;
+  }
+  
+  .active,
+  .accordion:hover {
+    background-color: #f1f7f5;
+  }
+  
+  .panel-container {
+    padding: 0 18px;
+    background-color: white;
+    display: none;
+    overflow:hidden;
+    background-color: #f1f7f5;
+    padding: 30px 40px;
+  }
+
+  .panel {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    align-items: center;
+    gap: 50px;
+  }
+  
+  .panel p {
+    color: rgba(0, 0, 0, 0.7);
+    font-size: 1.2rem;
+    line-height: 1.4;
+  }
+  
+  .panel img {
+    height: 200px;
+    width: 300px;
+    margin: auto auto;
+    border-radius: 5px;
+  }
+
+  .faq {
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    margin: 10px 0;
+  }
+  
+  .faq:active {
+    border: none;
+  }
+
+  .full-services-container {
+    width: 100%;
+    height: auto;
+    padding: 0
+  }
+
+  .full-services-container h1 {
+    text-align: center;
+    margin: 50px 0;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+  }
+
+  .full-services-list {
+    max-width: 1200px;
+    height: auto;
+    margin: 10px auto;
+    display: grid;
+    grid-template-columns: 240px 240px 240px 240px 240px;
+    flex-direction: column;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    background-color: #ffffff;
+  }
+
+  .full-services-list div {
+    display: flex; 
+    justify-content: start;
+    align-items: center;
+    height: 60px;
+    padding: 20px;
+    width: 240px;
+  }
+
+  .full-services-list div:hover {
+    border: 2px solid orange;
+  }
+
+  .full-services-list div i {
+    color: orange;
+    font-size: 20px;
+    padding-right: 10px;
+  }
+  
+
 /* RESPONSIVE DESIGN */
 
 @media (max-width: 1050px) {
@@ -941,14 +1075,17 @@ ul {
     display: none;
   }
 
-  
 
   .navbar .toggle-btn {
     display: block;
   }
 
-  .dropdown-menu {
-    display: block;
+ .dropdown-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  top: 125px;
   }
 
   .dropdown-menu .action-btn {
@@ -1013,12 +1150,12 @@ ul {
  @media (max-width: 600px) {
 
   .dropdown-menu {
-    width: 100%;
-    top: 105px;
+    top: 125px;
   }
 
   .dropdown-menu .action-btn {
-    width: 40%;
+    width: auto;
+    height: auto;
   }
 
   .service-list {
