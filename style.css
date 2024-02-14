@@ -378,6 +378,7 @@ a:hover {
   margin: 0;
   gap: 20px;
   color: black;
+  
 }
 
 .about-list div {
@@ -388,7 +389,7 @@ a:hover {
   transition: background 0.5, transform 0.5s;
   margin-bottom: 75px;
   border-radius: 4px;
-
+  border: 1px solid rgba(0, 0, 0, 0.2);
 }
 
 .about-list div i {
@@ -493,9 +494,11 @@ a:hover {
   min-height: 40vh;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  margin: 0 auto;
+  margin: 50px auto 150px auto;
   gap: 2px;
   color: black;
+  background-color: #fff;border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
 }
 
 .service-list div {  
@@ -507,8 +510,7 @@ a:hover {
   font-size: 13px;
   font-weight: 300;
   transition: background 0.5, transform 0.5s;
-  margin-bottom: 75px;
-  border-radius: 4px;
+  padding: 75px;
   
 }
 
@@ -547,7 +549,7 @@ a:hover {
 
 .contact-content {
   max-width: 1200px;
-  height: auto;
+  height: 300px;
   margin: 0 auto;
   padding: 100px 50px;
   display: grid;
@@ -583,6 +585,77 @@ a:hover {
   background-color: white;
   color: black;
 }
+
+/* Testimonials */
+
+.testimonials-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 15px;
+}
+
+/* Section Header */
+
+.section-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.section-header h2 {
+  font-size: 35px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: black;
+  line-height: 1.2;
+}
+
+/* Testimonails */
+
+.testimonials {
+  padding: 100px 0;
+}
+
+.testimonials-item {
+  background-color: white;
+  padding: 30px;
+  border-radius: 30px;
+}
+
+.testimonials-item .info {
+  display: flex;
+  align-items: center;
+}
+
+.testimonials-item .job {
+  text-transform: capitalize;
+  color: hsl(0, 0%, 40%);
+}
+
+.testimonials-item p {
+  margin-top: 20px;
+  color: hsl(0, 0%, 40%);
+}
+
+.testimonials-item .rating {
+  margin-top: 15px;
+  font-size: 14px;
+  color: hsl(36, 88%, 66%);
+}
+
+.testimonials .swiper-pagination{
+  position:relative;
+  margin-top: 40px;
+  bottom: auto;
+}
+
+.testimonials .swiper-pagination-bullet{
+  height: 12px;
+  width: 12px;
+  background-color: orange;
+}
+
+
+/* Accreditations */
 
 .accreditation-container {
   width: 100%;

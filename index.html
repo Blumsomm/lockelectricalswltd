@@ -6,6 +6,10 @@
   <title>Adam Lock - Electritian</title>
   <link rel="stylesheet" href="./style.css">
   <script src="https://kit.fontawesome.com/10cd935eb8.js" crossorigin="anonymous"></script>
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
 </head>
 
 <body>
@@ -171,6 +175,15 @@
     </div>
   </div>
   </section>
+
+  <section>
+    <div class="accreditation-container">
+      <div class="accreditations">
+        <img src="./images/napit-logo-2017.webp" alt="fullhouserewire">
+        <img src="./images/Checkatrade_Logo_2023.svg.png" alt="fullhouserewire">
+      </div>
+    </div>
+  </section>
   
   <section id="contact">
     <div class="contact-banner-container" >
@@ -182,13 +195,109 @@
   </section>
 
   <section>
-    <div class="accreditation-container">
-      <div class="accreditations">
-        <img src="./images/napit-logo-2017.webp" alt="fullhouserewire">
-        <img src="./images/Checkatrade_Logo_2023.svg.png" alt="fullhouserewire">
+    <div class="testimonials">
+      <div class="testimonials-container">
+        <div class="section-header">
+          <h2>What Our Clients Say</h2>
+        </div>
+        <div class="testimonials-content">
+          <div class="swiper testimonials-slider js-testimonials-slider">
+              <div class="swiper-wrapper">
+              <div class="swiper-slide testimonials-item">
+                <div class="info">
+                  <div class="text-box">
+                    <h3>Mutliple Jobs - Hive, Lighting, Hidden Sockets.</h3>
+                    <span class="job">Customer in PL9</span>
+                  </div>
+                </div>
+                  <p>Adam originally fitted some skylights to our kitchen last year. Since then we have had him back multiples time for a variety of jobs. Hive installation, mounting a tv and adding sockets hidden behind, fitting a security light to front door and wiring up our ring doorbell. Adam is very professional and reasonably priced. Really quick to respond to messages and is honest about the work he can carry out. I would recommend him for any job type; big or small.</p>
+                <div class="rating">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                </div>
+              </div>
+
+              <div class="swiper-slide testimonials-item">
+                <div class="info">
+                  <div class="text-box">
+                    <h3>House re-wire</h3>
+                    <span class="job">Customer in PL12</span>
+                  </div>
+                </div>
+                  <p>I recently bought a new house which needed some work, including a total re-wire. I did some research and asked for recommendations. Adam at Lock Electrical came highly recommended. He was professional, efficient, informative and tidy. I asked him for a price, he came out the same day and sent the quote within 24 hours. It was an excellent price for the amount of work he carried out. Overall I was very happy. I will use him again and highly recommend.</p>
+                <div class="rating">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                </div>
+              </div>
+
+              <div class="swiper-slide testimonials-item">
+                <div class="info">
+                  <div class="text-box">
+                    <h3>Replacement of Thermostat</h3>
+                    <span class="job">Customer in PL21</span>
+                  </div>
+                </div>
+                  <p>Prompt response to the initial enquiry replacing the faulty equipment the next day I felt it was a all done in an efficient manner at a sensible price I definitely would recommend him</p>
+                <div class="rating">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                </div>
+              </div>
+
+              <div class="swiper-slide testimonials-item">
+                <div class="info">
+                  <div class="text-box">
+                    <h3>Full electrical check on rental property, plus upgrades and repairs.</h3>
+                    <span class="job">Customer in PL3</span>
+                  </div>
+                </div>
+                  <p>Extremely professional, always on time, everything fully explained and neat work. Definitely use him for all my future work. Thank you.</p>
+                <div class="rating">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                </div>
+              </div>
+
+              <div class="swiper-slide testimonials-item">
+                <div class="info">
+                  <div class="text-box">
+                    <h3>Electric Sockets</h3>
+                    <span class="job">Customer in PL9</span>
+                  </div>
+                </div>
+                  <p>This is the second time l have used Lock Electrical and both times l have found him to be very professional. He discussed the work with me and gave me alternative suggestions that would work better for me which was great. He was efficient and respectful of my space. Definitely use him again</p>
+                <div class="rating">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                </div>
+              </div>
+
+          
+            </div>
+          </div>
+            <div class="swiper-pagination js-testimonials-pagination"></div>
+        </div>
       </div>
     </div>
   </section>
+
+ 
 
    
 </main> 
@@ -243,10 +352,28 @@
       
     
 
-
-
-<script src="app.js"></script>
   
+   <!-- Swiper JS -->
+ <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+ <!-- Javascript--> 
+ <script>
+  const swiper = new Swiper('.js-testimonials-slider', {
+      grabCursor: true,
+      spaceBetween: 30,
+      pagination: {
+        el: '.js-testimonials-pagination',
+        clickable: true
+      },
+      breakpoints:{
+        767:{
+          slidesPerView: 2
+        }
+      } 
+  });
+ </script>
+
+  <script src="app.js"></script>
 
 
 </body>
