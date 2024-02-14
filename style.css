@@ -665,7 +665,7 @@ a:hover {
 
 .accreditations {
   max-width: 1200px;
-  height: 117px;
+  height: auto;
   margin: 75px auto;
   display: flex;
   flex-direction: row;
@@ -1012,7 +1012,7 @@ ul {
   .wrapper {
     max-width: 1200px;
     margin: auto;
-    padding: 75px 0 25px 0;
+    padding: 75px 50px 25px 50px;
   }
   
   .wrapper > p, 
@@ -1095,9 +1095,10 @@ ul {
   }
 
   .full-services-container {
+    max-width: 1200px;
     width: 100%;
     height: auto;
-    padding: 0
+    padding: 25px 50px;
   }
 
   .full-services-container h1 {
@@ -1108,11 +1109,11 @@ ul {
   }
 
   .full-services-list {
-    max-width: 1200px;
+    width: 100%;
     height: auto;
     margin: 10px auto;
     display: grid;
-    grid-template-columns: 240px 240px 240px 240px 240px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     flex-direction: column;
     border: 1px solid rgba(0, 0, 0, 0.2);
     background-color: #ffffff;
@@ -1122,9 +1123,9 @@ ul {
     display: flex; 
     justify-content: start;
     align-items: center;
-    height: 60px;
-    padding: 20px;
-    width: 240px;
+    height: auto;
+    padding: 10px;
+    width: auto;
   }
 
   .full-services-list div:hover {
@@ -1134,7 +1135,8 @@ ul {
   .full-services-list div i {
     color: orange;
     font-size: 20px;
-    padding-right: 10px;
+    padding-right: 25px;
+    padding-left: 10px;
   }
   
 
@@ -1164,24 +1166,6 @@ ul {
   .dropdown-menu .action-btn {
     width: 175px;
   }
-/*
-  .intro.content {
-    padding: 50px;
-    width: 100%;
-  }
-
-  .intro-content h1 {
-    font-size: 2.25rem;
-    padding: 50px 0;
-  }
-
-  .intro-content p {
-    font-size: 1.25rem;
-    padding: 0;
-  }
-
-  */
-  
 }
 
 /*@media (max-width: 900px) {
@@ -1197,8 +1181,12 @@ ul {
     grid-template-columns: 1fr 1fr 1fr;
   }
 
+  .service-list {
+    margin: 50px 0;
+  }
+
   .service-list div {
-    padding: 0 25px;
+    padding:  25px;
   }
 
   /*.gallery-container .image-container .image {
@@ -1213,6 +1201,13 @@ ul {
   .footer-col {
     width: 50%;
     margin-bottom: 30px;
+  }
+
+  .accreditations {
+    display: block;
+    text-align: center;
+    padding: 20px;
+    margin: 0 0 50px 0;
   }
 
   .accreditations img:hover {
