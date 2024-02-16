@@ -686,8 +686,8 @@ a:hover {
 /* Footer */
 
 .container {
-  max-width: 100%;
-  margin: 0 100px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .row {
@@ -702,11 +702,12 @@ ul {
 .footer {
   background-color: #24262b;
   padding: 70px 0;
+  width: 100%;
 }
 
 .footer-col {
   width: 25%;
-  padding: 0 25px;
+  padding: 0 50px;
 }
 
 .footer h4 {
@@ -1099,6 +1100,7 @@ ul {
     width: 100%;
     height: auto;
     padding: 25px 50px;
+    margin: 0 auto;
   }
 
   .full-services-container h1 {
@@ -1160,7 +1162,7 @@ ul {
   justify-content: center;
   align-items: center;
   gap: 25px;
-  top: 125px;
+  top: 123px;
   }
 
   .dropdown-menu .action-btn {
@@ -1216,10 +1218,6 @@ ul {
 }
 
  @media (max-width: 600px) {
-
-  .dropdown-menu {
-    top: 125px;
-  }
 
   .dropdown-menu .action-btn {
     width: auto;
