@@ -80,6 +80,12 @@ body {
   font-size: 15px;
 }
 
+.contact-nav .phone:hover,
+.contact-nav .email:hover{
+  color: #e86826;
+  transition: 150ms;
+}
+
 /* MAIN NAV BAR */
 
 .navbar-container {
@@ -121,11 +127,11 @@ ul {
   font-size: 1rem;
   font-weight: 400;
   padding-bottom: 10px;
-  border-bottom: solid 4px orange;
+  border-bottom: solid 4px #e86826;
 }
 
 .logo i {
-  color: orange;
+  color: #e86826;
   font-size: 35px;
 }
 
@@ -143,7 +149,7 @@ ul {
 }
 
 .action-btn {
-  background-color: hsl(39, 100%, 50%);
+  background-color: #e86826;
   color: white;
   padding: 1rem 1rem;
   border: none;
@@ -157,8 +163,8 @@ ul {
 
 .action-btn:hover {
   color: white;
-  scale: 1.05;
   background-color: black;
+  transition: 150ms;
 }
 
 .action-btn:active {
@@ -173,7 +179,8 @@ a {
 }
 
 a:hover {
-  color: hsl(39, 100%, 50%);
+  color: #e86826;
+  transition: 150ms;
 }
 
 /* DROPDOWN MENU */
@@ -211,7 +218,8 @@ a:hover {
 }
 
 .dropdown-menu :hover {
-  color: hsl(39, 100%, 50%);
+  color: #e86826;
+  transition: 150ms;
 }
 .dropdown-menu li a {
   font-size: 1.1rem;
@@ -249,41 +257,45 @@ a:hover {
   padding: 100px 50px;
   color: white;
   text-transform: uppercase;
+}
+
+.canvas-text {
+  background-color: #05050598;
+  border-radius: 10px;
+  padding: 30px;
   
 }
 
 .canvas h1 {
   font-size: 60px;
-  font-weight: 700px;
+  font-weight: 800px;
   letter-spacing: 3px;
-  padding: 20px 0;
 }
 
 
 
 .canvas h2 {
   font-size: 60px;
-  font-weight: 300;
+  font-weight: 500;
   letter-spacing: 3px;
-  padding: 20px 0 50px 0;
+  padding: 25px 0 25px 0;
 }
  
 .canvas .divider {
-  border-top:hsl(39, 100%, 50%) 2px solid;
+  border-top:#e86826 2px solid;
   width: 15%;
   padding: 20px 0;
 }
 
 .canvas p {
   font-size: 20px;
-  padding-bottom: 20px;
   letter-spacing: 2px;
-  font-weight: 300;
+  font-weight: 400;
 }
 
 .canvas-btn {
   font-size: 1vw;
-  background-color: hsl(39, 100%, 50%);
+  background-color: #e86826;
   padding: 1rem 1rem;
   border-radius: 4px;
   margin-top: 2rem;
@@ -312,7 +324,7 @@ a:hover {
 }
 
 .canvas span {
-  color: orange;
+  color:#e86826;
   padding: 0 10px;
   font-weight: 600;
 }
@@ -395,7 +407,7 @@ a:hover {
 .about-list div i {
   font-size: 50px;
   margin-bottom: 15px;
-  color: orange;
+  color: #e86826;
 }
 
 .about-list div h2 {
@@ -406,17 +418,17 @@ a:hover {
 
 .about-list div p {
   font-size: 15px;
-  color:grey;
+  color:black;
 }
 
 .about-list div a {
   text-decoration: none;
-  background-color: orange; 
+  background-color:#e86826; 
   color: white;
   font-size: 15px;
   margin-top: 20px;
   display: inline-block;
-  border: orange solid 1px;
+  border: #e86826 solid 1px;
   padding: 10px;
   border-radius: 4px;
 }
@@ -424,12 +436,14 @@ a:hover {
 .about-list div a:hover {
   background-color: black;
   color: white;
-  border: none;
+  border: black solid 1px;
+  transition: 150ms;
 }
 
 .about-list div:hover {
-  border: 2px solid orange;
+  border: 2px solid #e86826;
   transform: translateY(-10px);
+  transition: 150ms;
 }
 
 /* Services Section */
@@ -454,7 +468,7 @@ a:hover {
 
 
 .services-content h5 {
-  color: orange;
+  color: #e86826;
   text-transform: uppercase;
   letter-spacing: 2px;
   padding: 25px 0;
@@ -525,7 +539,7 @@ a:hover {
 
 .service-list div i {
   font-size: 75px;
-  color: orange;
+  color: #e86826;
   padding-bottom: 20px;
 }
 
@@ -628,18 +642,18 @@ a:hover {
 
 .testimonials-item .job {
   text-transform: capitalize;
-  color: hsl(0, 0%, 40%);
+  color: black;
 }
 
 .testimonials-item p {
   margin-top: 20px;
-  color: hsl(0, 0%, 40%);
+  color: black;
 }
 
 .testimonials-item .rating {
   margin-top: 15px;
   font-size: 14px;
-  color: hsl(36, 88%, 66%);
+  color: #e86826;
 }
 
 .testimonials .swiper-pagination{
@@ -651,7 +665,7 @@ a:hover {
 .testimonials .swiper-pagination-bullet{
   height: 12px;
   width: 12px;
-  background-color: orange;
+  background-color: #e86826;
 }
 
 
@@ -726,7 +740,7 @@ ul {
   position:absolute;
   left: 0;
   bottom: -10px;
-  background-color: orange;
+  background-color: #e86826;
   height: 2px;
   box-sizing: border-box;
   width: 50px;
@@ -752,7 +766,7 @@ ul {
 }
 
 .footer-col ul li a:hover {
-  color: orange;
+  color: #e86826;
   padding-left: 8px;
 }
 
@@ -771,7 +785,7 @@ ul {
 
 .footer-col .social-links a:hover {
   color: #24262b;
-  background-color: orange;
+  background-color: #e86826;
 }
 
 /* Gallery Page CSS */
@@ -896,7 +910,7 @@ ul {
   .contact-list div i {
     font-size: 25px;
     margin-bottom: 15px;
-    color: orange;
+    color: #e86826;
   }
   
   .contact-list div h2 {
@@ -922,7 +936,7 @@ ul {
   }
   
   .contact-list div a:hover {
-    color: orange;
+    color: #e86826;
     border: none;
   }
   
@@ -1026,6 +1040,11 @@ ul {
     letter-spacing: 3px;
     text-transform: uppercase;
   }
+
+  .wrapper p {
+    font-size: 18px;
+    font-weight: 400;
+  }
   
   .accordion {
     background-color: #fff;
@@ -1045,11 +1064,11 @@ ul {
   .accordion i {
     font-size: 25px;
     padding-right: 15px;
-    color: orange;
+    color: #e86826;
   }
 
   .accordion:hover {
-    border: 1px solid orange;
+    border: 1px solid #e86826;
   }
   
   .active,
@@ -1125,17 +1144,18 @@ ul {
     display: flex; 
     justify-content: start;
     align-items: center;
-    height: auto;
+    height: 100px;
     padding: 20px;
     width: auto;
   }
-
+  /*
   .full-services-list div:hover {
-    border: 2px solid orange;
-  }
+    border: 1px solid #e86826;
+    transition: 150ms;
+  } */
 
   .full-services-list div i {
-    color: orange;
+    color: #e86826;
     font-size: 20px;
     padding-right: 25px;
     padding-left: 10px;
